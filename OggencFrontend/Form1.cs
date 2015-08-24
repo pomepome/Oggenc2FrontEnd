@@ -201,7 +201,10 @@ namespace OggencFrontend
                         {
                             option += String.Format(" --resample {0}", samplingRate);
                         }
-                        option += String.Format(" --scale {0}",volume);
+                        if (volume < 1.0)
+                        {
+                            option += String.Format(" --scale {0}", volume);
+                        }
                     }
                     ProcessStartInfo psi = new ProcessStartInfo();
                     psi.FileName = runDir;
