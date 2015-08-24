@@ -1,0 +1,10 @@
+c:\users\yo\documents\visual studio 2015\Projects\OggencFrontend\OggencFrontend\bin\Debug\OggencFrontend.exe
+c:\users\yo\documents\visual studio 2015\Projects\OggencFrontend\OggencFrontend\bin\Debug\OggencFrontend.pdb
+c:\users\yo\documents\visual studio 2015\Projects\OggencFrontend\OggencFrontend\obj\Debug\OggencFrontend.csprojResolveAssemblyReference.cache
+c:\users\yo\documents\visual studio 2015\Projects\OggencFrontend\OggencFrontend\obj\Debug\OggencFrontend.Form1.resources
+c:\users\yo\documents\visual studio 2015\Projects\OggencFrontend\OggencFrontend\obj\Debug\OggencFrontend.Properties.Resources.resources
+c:\users\yo\documents\visual studio 2015\Projects\OggencFrontend\OggencFrontend\obj\Debug\OggencFrontend.csproj.GenerateResource.Cache
+c:\users\yo\documents\visual studio 2015\Projects\OggencFrontend\OggencFrontend\obj\Debug\OggencFrontend.exe
+c:\users\yo\documents\visual studio 2015\Projects\OggencFrontend\OggencFrontend\obj\Debug\OggencFrontend.pdb
+c:\users\yo\documents\visual studio 2015\Projects\OggencFrontend\OggencFrontend\bin\Debug\OggencFrontend.exe.config
+c:\users\yo\documents\visual studio 2015\Projects\OggencFrontend\OggencFrontend\bin\Debug\CSCore.dll

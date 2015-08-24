@@ -1,0 +1,13 @@
+c:\users\yo\documents\visual studio 2015\Projects\OggencFrontend\OggencFrontend\bin\Release\OggencFrontend.exe.config
+c:\users\yo\documents\visual studio 2015\Projects\OggencFrontend\OggencFrontend\obj\Release\OggencFrontend.Form1.resources
+c:\users\yo\documents\visual studio 2015\Projects\OggencFrontend\OggencFrontend\obj\Release\OggencFrontend.Properties.Resources.resources
+c:\users\yo\documents\visual studio 2015\Projects\OggencFrontend\OggencFrontend\obj\Release\OggencFrontend.csproj.GenerateResource.Cache
+c:\users\yo\documents\visual studio 2015\Projects\OggencFrontend\OggencFrontend\bin\Release\OggencFrontend.exe
+c:\users\yo\documents\visual studio 2015\Projects\OggencFrontend\OggencFrontend\bin\Release\OggencFrontend.pdb
+c:\users\yo\documents\visual studio 2015\Projects\OggencFrontend\OggencFrontend\bin\Release\CSCore.dll
+c:\users\yo\documents\visual studio 2015\Projects\OggencFrontend\OggencFrontend\obj\Release\OggencFrontend.exe
+c:\users\yo\documents\visual studio 2015\Projects\OggencFrontend\OggencFrontend\obj\Release\OggencFrontend.pdb
+c:\users\yo\documents\visual studio 2015\Projects\OggencFrontend\OggencFrontend\obj\Release\OggencFrontend.csprojResolveAssemblyReference.cache
+c:\users\yo\documents\visual studio 2015\Projects\OggencFrontend\OggencFrontend\obj\Release\OggencFrontend.Setting.resources
+c:\users\yo\documents\visual studio 2015\Projects\OggencFrontend\OggencFrontend\bin\Release\taglib-sharp.dll
+c:\users\yo\documents\visual studio 2015\Projects\OggencFrontend\OggencFrontend\bin\Release\ICSharpCode.SharpZipLib.dll
