@@ -155,54 +155,29 @@ namespace OggencFrontend
                                 {
                                     option += String.Format(" --comment comment=\"{0}", tag.Comment) + "\"";
                                 }
-                                if (tag.Performers != null && (tag.Performers.Length > 0 || tag.JoinedPerformers != null))
+                                if (tag.Performers != null && tag.Performers.Length > 0)
                                 {
-                                    option += " --artist \"";
-                                    List<string> artistList = new List<string>();
-                                    foreach(string performer in tag.Performers)
-                                    {
-                                        if(performer.Trim() != "" && !artistList.Contains(performer))
-                                        {
-                                            artistList.Add(performer);
-                                        }
-                                    }
-                                    if(tag.JoinedPerformers != null && tag.JoinedPerformers.Trim() != "")
-                                    {
-                                        string[] performers = tag.JoinedPerformers.Split(";".ToCharArray());
-                                        foreach(string performer in performers)
-                                        {
-                                            if(performer.Trim() != "" && !artistList.Contains(performer))
-                                            {
-                                                artistList.Add(performer.Trim());
-                                            }
-                                        }
-                                    }
-                                    foreach (string artist in artistList)
-                                    {
-                                        option += artist + ";";
-                                    }
-                                    option = option.Remove(option.Length - 1);
-                                    option += "\"";
+                                    option += String.Format(" --artist \"{0}\"",tag.Performers[0]);
                                 }
                                 if (tag.FirstGenre != null)
                                 {
-                                    option += String.Format(" --genre \"{0}", tag.FirstGenre) + "\"";
+                                    option += String.Format(" --genre \"{0}\"", tag.FirstGenre);
                                 }
                                 if (tag.Year != 0)
                                 {
-                                    option += String.Format(" --date \"{0}", tag.Year) + "\"";
+                                    option += String.Format(" --date \"{0}\"", tag.Year);
                                 }
                                 if (tag.Track != 0)
                                 {
-                                    option += String.Format(" --tracknum \"{0}", tag.Track) + "\"";
+                                    option += String.Format(" --tracknum \"{0}\"", tag.Track);
                                 }
                                 if (tag.Title != null)
                                 {
-                                    option += String.Format(" --title \"{0}", tag.Title) + "\"";
+                                    option += String.Format(" --title \"{0}\"", tag.Title);
                                 }
                                 if (tag.Album != null)
                                 {
-                                    option += String.Format(" --album \"{0}", tag.Album) + "\"";
+                                    option += String.Format(" --album \"{0}\"", tag.Album);
                                 }
                             }
                         }
@@ -231,7 +206,7 @@ namespace OggencFrontend
                     ProcessStartInfo psi = new ProcessStartInfo();
                     psi.FileName = runDir;
                     psi.UseShellExecute = true;
-                    psi.Arguments = toEncode + option + " -o " + "\"out\\" + baseName + ".ogg ";
+                    psi.Arguments = String.Format("{0}{1} -o {2}",toEncode , option , "\"out\\" + baseName + ".ogg ");
 
                     Process p = Process.Start(psi);
                     p.WaitForExit();
