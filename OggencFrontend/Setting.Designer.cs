@@ -227,10 +227,26 @@
             // 
             // numericVolume
             // 
+            this.numericVolume.DecimalPlaces = 1;
+            this.numericVolume.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
             this.numericVolume.Location = new System.Drawing.Point(52, 123);
+            this.numericVolume.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
             this.numericVolume.Name = "numericVolume";
             this.numericVolume.Size = new System.Drawing.Size(58, 19);
             this.numericVolume.TabIndex = 10;
+            this.numericVolume.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label2
             // 
