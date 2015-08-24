@@ -1,2 +1,5 @@
 # Oggenc2FrontEnd
-GUI frontend for oggenc2 written on C#
+GUI frontend for oggenc2 written in C#
+
+This software is using CSCore(https://github.com/filoe/cscore) and Taglib-shap(https://github.com/mono/taglib-sharp).
+Thanks!
