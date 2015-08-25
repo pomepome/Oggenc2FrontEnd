@@ -7,7 +7,6 @@ using CSCore;
 using CSCore.MediaFoundation;
 using OggencFrontend.Properties;
 using TagLib;
-using System.Collections.Generic;
 
 namespace OggencFrontend
 {
@@ -127,6 +126,29 @@ namespace OggencFrontend
             }
             process();
         }
+        private bool IsFileLocked(string path)
+        {
+            FileStream stream = null;
+
+            try
+            {
+                stream = new FileStream(path, FileMode.Open, FileAccess.ReadWrite, FileShare.None);
+            }
+            catch
+            {
+                return true;
+            }
+            finally
+            {
+                if (stream != null)
+                {
+                    stream.Close();
+                }
+            }
+
+            return false;
+        }
+
         private void process()
         {
             if (listBox1.Items.Count > 0)
@@ -136,6 +158,13 @@ namespace OggencFrontend
                 string option = "";
                 bool doDecode = true;
                 string toEncode = "\"" + path + "\"";
+                string output = String.Format("out/{0}.ogg", baseName);
+
+                if (System.IO.File.Exists(output) && IsFileLocked(output))
+                {
+                    MessageBox.Show(this,"出力先のファイルにロックが掛かっています。\nファイルを開いているタスクを閉じてください。","情報",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    return;
+                }
 
                 if (System.IO.File.Exists(path))
                 {
@@ -211,7 +240,7 @@ namespace OggencFrontend
                     psi.UseShellExecute = true;
                     psi.Arguments = String.Format("{0}{1} -o {2}",toEncode , option , "\"out\\" + baseName + ".ogg ");
 
-                    Process p = Process.Start(psi);
+                    Process p = Process.Start(psi);// Execution oggenc2.exe
                     p.WaitForExit();
 
                     if (doDecode)
